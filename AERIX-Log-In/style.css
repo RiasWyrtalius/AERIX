@@ -1,0 +1,282 @@
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .new {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .alignment {
+        flex-direction: row;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+html {
+    scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+body {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    font-style: normal;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+input {
+    font-size: 1em;
+    margin: 5px 0;
+    width: calc(100% - 20px);
+    height: 2em;
+
+    background-color: #bbbbbb;
+}
+
+header {
+    text-align: center;
+}
+
+button {
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+strong {
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-style: normal;
+    color: #418ce3;
+}
+
+a {
+    color: #4169E1;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+hr {
+    flex-grow: 0.5;
+    border: none;
+    border-top: 2px solid #b5b3b3;
+}
+
+img {
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    text-align: center;
+    gap: 8px;
+
+    transform: translateY(-2px);
+
+    margin-top: 5px;
+
+    height: 20px;
+    width: auto;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+img {
+    height: 20px;
+    width: auto;
+}
+
+:root {
+    --gradient: linear-gradient(
+        145deg,
+        #FFF2F2 0%,
+        #A9B5DF 33%,
+        #7886C7 66%,
+        #2D336B 100%
+    );
+}
+
+.background {
+    background-image: var(--gradient);
+    background-size: 300% 300%;
+    background-repeat: no-repeat;
+    animation: bg-animation 15s infinite alternate;
+    backdrop-filter: blur(10px);    
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.container {
+
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+
+    filter: drop-shadow(0 0 0.5rem gray);
+    overflow: hidden; 
+}
+
+.space {
+    margin-bottom: 20px;
+}
+
+.info {
+    border: 1px solid #757575;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.input-container ion-icon {
+    font-size: 20px;
+    color: #888;
+    position: absolute;
+}
+  
+.input-container .info {
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 35px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.input-container ion-icon:first-of-type {
+    left: 10px;
+}
+
+/* Right icon (eye toggle) */
+.toggle-icon {
+    right: 10px;
+    cursor: pointer;
+}
+
+.resetp {
+    text-decoration: none;
+}
+
+.join {
+    text-decoration: none;
+    color: #5779e0;
+}
+
+.sign_in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+
+    color: #b9b8b8;
+}
+
+.new {
+    text-align: center;
+    margin: 25px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+}
+
+.or {
+    color: #b9b8b8;
+}
+
+.alignment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+#sign-in {
+    color: white;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+}
+
+#signin-btn {
+    background-color: #4169E1;
+    border: 2px;
+}
+
+#google {
+    border: 1px solid #757575;
+    background-color:#bbbbbb;
+}
+
+#g {
+    color: #616060;
+    font-weight: 500;
+}
+
+#left {
+    margin-right: 5px;
+}
+
+#right {
+    margin-left: 5px;
+}

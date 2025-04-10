@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AERIX Log-in</title>
+
+    <!--FavIcon-->
+    <link rel="icon" type="image/x-icon" href="A.png">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!--AERIX FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+</head>
+<body class="background">
+    <div class="container">
+        <div class="menu">
+            <header>
+                <strong><h1>AERIX</h1></strong>
+            </header>
+            <div class="details">
+                <h4>Email</h4>
+                <div class="input-container">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input class="info" type="text" placeholder="example@gmail.com"/>
+                </div>
+                <h4>Password</h4>
+                <div class="input-container">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input id="passwordInput" class="info" type="password" placeholder="Password"/>
+                    <ion-icon id="togglePassword" name="eye-off-outline" class="toggle-icon"></ion-icon>
+                </div>
+            </div>
+            <a href="#" class="resetp" target='_blank'>
+                <h4 id="forgot">Forgot password?</h4>
+            </a>
+            <div class="sign_in">
+                <button id="signin-btn"><a href="/html/AERIX/AERIX-Home/Home.html" id="sign-in">Log in</a></button>
+                <div class="line">
+                    <hr id="left">
+                        <a class="or">or</a>
+                    <hr id="right">
+                </div>
+                <button id="google">
+                    <div class="alignment">
+                        <img src="/html/login_menu/google.svg" class="image" alt="google_logo">
+                        <a href="#" id="g">Continue with Google</a>
+                    </div>
+                </button>
+                <div class="new">
+                    <p>New to <strong>AERIX</strong>?</p>
+                    <a href="#" class="join" target='_blank'>Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>created by <b>Wyrtalius</b> © 2025</p>
+    </div>
+
+    <!--JS-->
+    <script src="script.js"></script>
+
+    <!--ICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
