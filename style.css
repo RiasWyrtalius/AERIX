@@ -1,3 +1,5 @@
+/*ADD HAMBURGER ICON TO APPEAR IN A CERTAIN SIZE TO PREVENT OVERFLOW OF NAVBAR*/
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
