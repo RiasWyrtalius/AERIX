@@ -1,3 +1,80 @@
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .nav-shop {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 0.5rem;
+        padding: 0 1rem;
+    }
+
+    .info {
+        margin: 0.5rem 1rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .slider-wrapper {
+        max-width: 100%;
+        padding: 1rem 0;
+    }
+
+    .slider {
+        height: 50vw;
+    }
+
+    .dropbtn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .slider-btn {
+        font-size: 2rem;
+    }
+
+    header h1 a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        height: 60vw;
+    }
+
+    .slider-nav {
+        bottom: 0.5rem;
+        column-gap: 0.5rem;
+    }
+
+    .slider-nav a {
+        width: 0.4rem;
+        height: 0.4rem;
+    }
+
+    .info ion-icon {
+        font-size: 1.8rem;
+    }
+}
+
 html {
     scrollbar-width: none;
 	-ms-overflow-style: none;
