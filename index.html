@@ -26,14 +26,16 @@
     
 </head>
 <body>
+
+    <!--NAVBAR-->
     <nav>
         <header>
-            <strong><h1><a href="index.html">AERIX</a></h1></strong>
+            <strong><h1><a href="home.html">AERIX</a></h1></strong>
         </header>
         <div class="nav-shop">
             <div class="dropdown">
                 <button class="dropbtn">
-                    Deals<ion-icon name="chevron-down-outline"></ion-icon> <!--ADD JS-->
+                    Deals
                 </button>
                 <div class="dropdown-content">
                     <a href="#">Link 1</a>
@@ -43,7 +45,17 @@
             </div>
             <div class="dropdown">
                 <button class="dropbtn">
-                    Gaming PCs<ion-icon name="chevron-down-outline"></ion-icon> <!--ADD JS-->
+                    Gaming PCs
+                </button>
+                <div class="dropdown-content">
+                    <a href="#prebuilts-txt">Prebuilts</a>
+                    <a href="#limited-txt">Limited Edition</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Components
                 </button>
                 <div class="dropdown-content">
                     <a href="#">Link 1</a>
@@ -53,7 +65,7 @@
             </div>
             <div class="dropdown">
                 <button class="dropbtn">
-                    Components<ion-icon name="chevron-down-outline"></ion-icon> <!--ADD JS-->
+                    Gaming Gear
                 </button>
                 <div class="dropdown-content">
                     <a href="#">Link 1</a>
@@ -63,7 +75,7 @@
             </div>
             <div class="dropdown">
                 <button class="dropbtn">
-                    Gaming Gear<ion-icon name="chevron-down-outline"></ion-icon> <!--ADD JS-->
+                    Monitors
                 </button>
                 <div class="dropdown-content">
                     <a href="#">Link 1</a>
@@ -72,34 +84,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">
-                    Monitors<ion-icon name="chevron-down-outline"></ion-icon> <!--ADD JS-->
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    Software<ion-icon name="chevron-down-outline"></ion-icon> <!--ADD JS-->
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    Community<ion-icon name="chevron-down-outline"></ion-icon> <!--ADD JS-->
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
+                <button class="dropbtn">About Us</button>
             </div>
         </div>
         <div class="info">
@@ -109,7 +94,7 @@
                     <ion-icon name="person-circle-outline"></ion-icon>
                 </button>
                 <div class="dropdown-content">
-                    <a href="https://riaswyrtalius.github.io/login-page/">Profile</a> <!--GitHub Link for now, issues with other .html file-->
+                    <a href="/html/AERIX/AERIX-Log-In/login.html">Profile</a>
                     <a href="#">Settings (WIP)</a>
                 </div>
             </div>
@@ -117,6 +102,14 @@
         </div>
     </nav>
     <section class="container">
+        <div class="hero-section">
+            <h2 aria-label="Innovation Meets Unmatched Performance" id="typewriter-txt">
+                Innovation Meets<br>
+                <span class="typewriter-wrapper">
+                    <span class="typewriter"><span class="text"></span></span>
+                </span>
+            </h2>
+        </div>
         <div class="slider-wrapper">
 
             <button class="slider-btn prev"><ion-icon name="chevron-back-outline"></ion-icon></button> <!--Left Arrow-->
@@ -140,6 +133,186 @@
             </div>
         </div>
     </section>
+
+
+    <!--PREBUILT SECTION-->
+    <section class="prebuilt">
+        <h3 class="header" id="prebuilts-txt">Prebuilts</h3>
+        <div class="prebuilt-section">
+
+            <div class="pc-card">
+                <img src="pc-images/zephyr.avif" />
+                <div class="css-card">
+                    <h3 class="pc-head">Zephyr</h3>
+                    <p class="pc-subhead">H5 Flow Gaming PC with RTX 3050 or RTX 4060 GPU</p>
+                    <p class="pc-desc">
+                        Key Specs
+                        <ul>
+                            <li>Windows 11 Professional</li>
+                            <li>Intel® Core™ i5-13400F</li>
+                            <li>NVIDIA® GeForce RTX™ 3050</li>
+                        </ul>
+                    </p>
+                    <div class="pc-buy">
+                        <p class="pc-price">$849.00</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pc-card">
+                <img src="pc-images/glide.avif" />
+                <div class="css-card">
+                    <h3 class="pc-head">Glide</h3>
+                    <p class="pc-subhead">H7 Flow (2022) RTX 5070 Gaming PC</p>
+                    <p class="pc-desc">
+                        Key Specs
+                        <ul>
+                            <li>Windows 11 Professional</li>
+                            <li>AMD Ryzen™ 5 9600X</li>
+                            <li>NVIDIA® GeForce RTX™ 5070</li>
+                        </ul>
+                    </p>
+                    <div class="pc-buy">
+                        <p class="pc-price">$1,999.00</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pc-card">
+                <img src="pc-images/stratus.avif" />
+                <div class="css-card">
+                    <h3 class="pc-head">Stratus</h3>
+                    <p class="pc-subhead">H9 Flow RTX 5080 Gaming PC</p>
+                    <p class="pc-desc">
+                        Key Specs
+                        <ul>
+                            <li>Windows 11 Professional</li>
+                            <li>Intel Core Ultra 7 265KF</li>
+                            <li>NVIDIA® GeForce RTX™ 5080</li>
+                        </ul>
+                    </p>
+                    <div class="pc-buy">
+                        <p class="pc-price">$3,399.00</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pc-card">
+                <img src="pc-images/aerocore.avif" />
+                <div class="css-card">
+                    <h3 class="pc-head">AeroCore</h3>
+                    <p class="pc-subhead">H5 Flow RGB RTX 4060 Ti Gaming PC</p>
+                    <p class="pc-desc">
+                        Key Specs
+                        <ul>
+                            <li>Windows 11 Professional</li>
+                            <li>Intel® Core™ i5-13400F</li>
+                            <li>NVIDIA® GeForce RTX™ 4060 Ti 8GB</li>
+                        </ul>
+                    </p>
+                    <div class="pc-buy">
+                        <p class="pc-price">$1,249.00</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--LIMITED EDITION SECTION-->
+    <section class="prebuilt">
+        <h3 class="header2" id="limited-txt">Limited Edition</h3>
+        <div class="prebuilt-section">
+
+            <div class="pc-card">
+                <img src="pc-images/stryde.avif" />
+                <div class="css-card">
+                    <h3 class="pc-head">STRYDE | 4090</h3>
+                    <p class="pc-subhead">H9 Flow (2023) RTX 4090 Gaming PC</p>
+                    <p class="pc-desc">
+                        Key Specs
+                        <ul>
+                            <li>Windows 11 Professional</li>
+                            <li>Intel® Core™ i9-14900KF</li>
+                            <li>NVIDIA® GeForce RTX™ 4090</li>
+                        </ul>
+                    </p>
+                    <div class="pc-buy">
+                        <p class="pc-price">$4,499.00</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pc-card">
+                <img src="pc-images/ascent.avif" />
+                <div class="css-card">
+                    <h3 class="pc-head">ASCENT | 5080</h3>
+                    <p class="pc-subhead">H6 Flow RTX 5080 Gaming PC</p>
+                    <p class="pc-desc">
+                        Key Specs
+                        <ul>
+                            <li>Windows 11 Professional</li>
+                            <li>AMD Ryzen™ 7 9800X3D</li>
+                            <li>NVIDIA® GeForce RTX™ 5080</li>
+                        </ul>
+                    </p>
+                    <div class="pc-buy">
+                        <p class="pc-price"><strike>$3,399.00</strike> $3,299.00</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pc-card">
+                <img src="pc-images/vortex.avif" />
+                <div class="css-card">
+                    <h3 class="pc-head">VORTEX | 5090</h3>
+                    <p class="pc-subhead">H9 Elite RTX 5090 Gaming PC</p>
+                    <p class="pc-desc">
+                        Key Specs
+                        <ul>
+                            <li>Windows 11 Professional</li>
+                            <li>AMD Ryzen™ 7 9800X3D</li>
+                            <li>NVIDIA® GeForce RTX™ 5090</li>
+                        </ul>
+                    </p>
+                    <div class="pc-buy">
+                        <p class="pc-price">$5,499.00</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pc-card">
+                <img src="pc-images/flux.avif" />
+                <div class="css-card">
+                    <h3 class="pc-head">FLUX | 5070 Intel</h3>
+                    <p class="pc-subhead">H5 Flow RGB RTX 4060 Ti Gaming PC</p>
+                    <p class="pc-desc">
+                        Key Specs
+                        <ul>
+                            <li>Windows 11 Professional</li>
+                            <li>Intel Core™ Ultra 7 265KF</li>
+                            <li>NVIDIA® GeForce RTX™ 5070</li>
+                        </ul>
+                    </p>
+                    <div class="pc-buy">
+                        <p class="pc-price">$1,999.00</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <p>w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr </p>
+    </footer>
 
     <!--JS-->
     <script src="scripts.js"></script>
