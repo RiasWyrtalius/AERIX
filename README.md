@@ -1,2 +1,2 @@
 # AERIX
-AERIX Final Project w/ Home and Log-in Page
+AERIX Final Project w/ Home, Log-in, Promos Pages
