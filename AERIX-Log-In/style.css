@@ -252,15 +252,13 @@ img {
     gap: 8px;
 }
 
-#sign-in {
-    color: white;
-    letter-spacing: 1.2px;
-    font-weight: 500;
-}
-
 #signin-btn {
     background-color: #4169E1;
     border: 2px;
+
+    color: white;
+    letter-spacing: 1.2px;
+    font-weight: 500;
 }
 
 #google {
