@@ -1,0 +1,111 @@
+:root {
+    --bg: hsl(254, 50%, 10%);
+    --cards: hsl(254, 50%, 20%);
+    --accents: hsl(254, 50%, 50%);
+    --accents2: hsl(254, 49%, 30%);
+    --text: hsl(254, 50%, 90%);
+
+    --transition: 0.3s ease-in-out;
+
+    --caret: hsl(315, 80%, 80%);
+
+    --margin-xxs:   0.25rem;
+    --margin-xs:    0.5rem;
+    --margin-s:     0.75rem;
+    --margin-m:     1rem;
+    --margin-l:     1.5rem;
+    --margin-xl:    2rem;
+    --margin-xxl:   2.5rem;
+}
+
+.promotion-container {
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-promo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+    width: 1500px;
+    height: 500px;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+    border-radius: 20px;
+    gap: 2rem;
+}
+
+.hero-header {
+    flex: 1;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+
+    padding: 2rem;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: var(--margin-xxl);
+    color: white;
+
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-image {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accents2);
+    border-radius: 20px;
+    height: 100%;
+}
+
+.hero-promo img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.promo-banners {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.promo-img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.promo-img:hover {
+    transform: scale(1.05);
+}
