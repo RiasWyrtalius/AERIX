@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>AERIX - Home</title>
+    <title>Home</title>
 
     <!--FavIcon-->
     <link rel="icon" type="image/x-icon" href="A.png">
 
     <!--CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">        <!--HOME CSS-->
 
     <!--FONTS-->
 
@@ -30,33 +30,19 @@
     <!--NAVBAR-->
     <nav>
         <header>
-            <strong><h1><a href="index.html">AERIX</a></h1></strong>
+            <strong><h1><a href="home.html">AERIX</a></h1></strong>
         </header>
         <div class="nav-shop">
             <div class="dropdown">
-                <button class="dropbtn">
-                    Deals
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    Gaming PCs
-                </button>
+                <button class="dropbtn">Gaming PCs</button>
                 <div class="dropdown-content">
                     <a href="#prebuilts-txt">Prebuilts</a>
-                    <a href="#limited-txt">Limited Edition</a>
-                    <a href="#">Link 3</a>
+                    <a href="#AEEdition-txt">AERIX Edition</a>
+                    <a href="#limited-txt">Limited Deals</a>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">
-                    Components
-                </button>
+                <button class="dropbtn">Components</button>
                 <div class="dropdown-content">
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
@@ -64,9 +50,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">
-                    Gaming Gear
-                </button>
+                <button class="dropbtn">Peripherals</button>
                 <div class="dropdown-content">
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
@@ -74,14 +58,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">
-                    Monitors
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
+                <button class="dropbtn"><a href="/html/AERIX/AERIX-Promos/Promos.html">Promos</a></button>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">About Us</button>
@@ -94,7 +71,7 @@
                     <ion-icon name="person-circle-outline"></ion-icon>
                 </button>
                 <div class="dropdown-content">
-                    <a href="https://riaswyrtalius.github.io/login-page/">Profile</a>
+                    <a href="/html/AERIX/AERIX-Log-In/login.html">Profile</a>
                     <a href="#">Settings (WIP)</a>
                 </div>
             </div>
@@ -137,7 +114,7 @@
 
     <!--PREBUILT SECTION-->
     <section class="prebuilt">
-        <h3 class="header" id="prebuilts-txt">Prebuilts</h3>
+        <h3 class="header left" id="prebuilts-txt">Prebuilts</h3>
         <div class="prebuilt-section">
 
             <div class="pc-card">
@@ -222,9 +199,9 @@
         </div>
     </section>
 
-    <!--LIMITED EDITION SECTION-->
+    <!--AERIX EDITION SECTION-->
     <section class="prebuilt">
-        <h3 class="header2" id="limited-txt">Limited Edition</h3>
+        <h3 class="header right" id="AEEdition-txt"><a class="logo-color">AERIX</a> Edition</h3>
         <div class="prebuilt-section">
 
             <div class="pc-card">
@@ -248,7 +225,10 @@
             </div>
 
             <div class="pc-card">
-                <img src="pc-images/ascent.avif" />
+                <div class="image-wrapper">
+                    <img src="pc-images/ascent.avif"/>
+                    <div class="discounts">$100 OFF</div>
+                </div>
                 <div class="css-card">
                     <h3 class="pc-head">ASCENT | 5080</h3>
                     <p class="pc-subhead">H6 Flow RTX 5080 Gaming PC</p>
@@ -309,9 +289,109 @@
         </div>
     </section>
 
+    <!--LIMITED DEALS SECTION-->
+    <section class="prebuilt">
+        <h3 class="header center" id="limited-txt">Limited Deals</h3>
+        <div class="limited-section">
+
+            <div class="pc-card">
+                <div class="image-wrapper">
+                    <img src="pc-images/limited1.avif" />
+                    <div class="discounts">$40 OFF</div>
+                </div>
+                <div class="css-card">
+                    <h3 class="pc-head">FusionView 27 Prime | 27” FHD 165Hz Ultra-Slim IPS Monitor</h3>
+                    <p class="pc-subhead">27" FHD 165 Hz Gaming Monitor</p>
+                    <p class="pc-desc">
+                        Key Specs
+                        <ul>
+                            <li>27"</li>
+                            <li>IPS</li>
+                            <li>FHD (1920x1080)</li>
+                        </ul>
+                    </p>
+                    <div class="pc-buy">
+                        <p class="pc-price"><strike>$199.99</strike> $159.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pc-card">
+                <div class="image-wrapper">
+                    <img src="pc-images/limited2.avif" />
+                    <div class="discounts">$140 OFF</div>
+                </div>
+                <div class="css-card">
+                    <h3 class="pc-head">2 FusionView 165Hz + Monitor Arm - Dual</h3>
+                    <p class="pc-subhead">FusionView FHD 165Hz (x2) and Dual Monitor Arm</p>
+                    <p class="pc-desc">
+                        Key Specs
+                        <ul>
+                            <li>27"</li>
+                            <li>IPS</li>
+                            <li>FHD (1920x1080)</li>
+                        </ul>
+                    </p>
+                    <div class="pc-buy">
+                        <p class="pc-price"><strike>$569.97</strike> $429.00</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pc-card">
+                <div class="image-wrapper">
+                    <img src="pc-images/limited3.avif" />
+                    <div class="discounts">$60 OFF</div>
+                </div>
+                <div class="css-card">
+                    <h3 class="pc-head">FusionView 165Hz + Monitor Arm - Single</h3>
+                    <p class="pc-subhead">Bundle FusionView FHD 165Hz and Monitor Arm</p>
+                    <p class="pc-desc">
+                        Key Specs
+                        <ul>
+                            <li>27"</li>
+                            <li>IPS</li>
+                            <li>FHD (1920x1080)</li>
+                        </ul>
+                    </p>
+                    <div class="pc-buy">
+                        <p class="pc-price"><strike>$299.98</strike> $239.00</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--FOOTER-->
     <footer>
-        <p>w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr w footer fr </p>
+        <div class="main-footer">
+            <div class="contacts">
+                <h4 class="f-header">Contact (WIP)</h4>
+                <h4 class="f-subdesc">Customer Support</h4>
+                <h4 class="f-subdesc">Submit a Request</h4>
+                <h4 class="f-subdesc">Support Center</h4>
+            </div>
+            <div class="about">
+                <h4 class="f-header">About AERIX</h4>
+                <h4 class="f-subdesc">Creators</h4>
+            </div>
+            <div class="store">
+                <h4 class="f-header">AERIX STORE (WIP)</h4>
+                <h4 class="f-subdesc">AERIX Custom Gaming PC</h4>
+            </div>
+        </div>
+        <div class="copyright">
+            <header>
+                <strong><h1><a href="home.html">AERIX</a></h1></strong>
+            </header>
+            <h4 class="f-subdesc">© AERIX Inc. 2025 All Rights Reserved</h4>
+            <p class="references f-subdesc">
+                Inspired by <a href="https://nzxt.com/" target="_blank" rel="noopener noreferrer" id="NZXT">NZXT</a>. Product names, visual elements, and design styles may reference or adapt concepts from NZXT for academic purposes only.
+            </p>
+        </div>
     </footer>
 
     <!--JS-->
