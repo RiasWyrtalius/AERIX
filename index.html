@@ -32,52 +32,59 @@
         <header>
             <strong><h1><a href="index.html">AERIX</a></h1></strong>
         </header>
-        <div class="nav-shop">
-            <div class="dropdown">
-                <button class="dropbtn">Gaming PCs</button>
-                <div class="dropdown-content">
-                    <a href="#prebuilts-txt">Prebuilts</a>
-                    <a href="#AEEdition-txt">AERIX Edition</a>
-                    <a href="#limited-txt">Limited Deals</a>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"> <!-- Hamburger Icon (hidden on desktop) -->
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <div class="nav-menu">
+            <div class="nav-shop">
+                <div class="dropdown">
+                    <button class="dropbtn">Gaming PCs</button>
+                    <div class="dropdown-content">
+                        <a href="#prebuilts-txt">Prebuilts</a>
+                        <a href="#AEEdition-txt">AERIX Edition</a>
+                        <a href="#limited-txt">Limited Deals</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Components</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Peripherals</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="https://riaswyrtalius.github.io/AERIX-Promo/">Promos</a></button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">About Us</button>
                 </div>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Components</button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+            <div class="info">
+                <ion-icon name="search-circle-outline"></ion-icon>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="https://riaswyrtalius.github.io/login-page/">Profile</a>
+                        <a href="#">Settings (WIP)</a>
+                    </div>
                 </div>
+                <ion-icon name="cart-outline"></ion-icon>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Peripherals</button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn"><a href="https://riaswyrtalius.github.io/AERIX-Promo/">Promos</a></button>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">About Us</button>
-            </div>
-        </div>
-        <div class="info">
-            <ion-icon name="search-circle-outline"></ion-icon>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <ion-icon name="person-circle-outline"></ion-icon>
-                </button>
-                <div class="dropdown-content">
-                    <a href="https://riaswyrtalius.github.io/login-page/">Profile</a>
-                    <a href="#">Settings (WIP)</a>
-                </div>
-            </div>
-            <ion-icon name="cart-outline"></ion-icon>
         </div>
     </nav>
+
+    <!--HERO SECTION-->
     <section class="container">
         <div class="hero-section">
             <h2 aria-label="Innovation Meets Unmatched Performance" id="typewriter-txt">
@@ -365,34 +372,34 @@
         </div>
     </section>
 
-    <!--FOOTER-->
-    <footer>
-        <div class="main-footer">
-            <div class="contacts">
-                <h4 class="f-header">Contact (WIP)</h4>
-                <h4 class="f-subdesc">Customer Support</h4>
-                <h4 class="f-subdesc">Submit a Request</h4>
-                <h4 class="f-subdesc">Support Center</h4>
-            </div>
-            <div class="about">
-                <h4 class="f-header">About AERIX</h4>
-                <h4 class="f-subdesc">Creators</h4>
-            </div>
-            <div class="store">
-                <h4 class="f-header">AERIX STORE (WIP)</h4>
-                <h4 class="f-subdesc">AERIX Custom Gaming PC</h4>
-            </div>
+<!--FOOTER-->
+<footer>
+    <div class="main-footer">
+        <div class="contacts">
+            <h4 class="f-header">Contact (WIP)</h4>
+            <p class="f-subdesc"><a href="#">Customer Support</a></p>
+            <p class="f-subdesc"><a href="#">Submit a Request</a></p>
+            <p class="f-subdesc"><a href="#">Support Center</a></p>
         </div>
-        <div class="copyright">
-            <header>
-                <strong><h1><a href="home.html">AERIX</a></h1></strong>
-            </header>
-            <h4 class="f-subdesc">© AERIX Inc. 2025 All Rights Reserved</h4>
-            <p class="references f-subdesc">
-                Inspired by <a href="https://nzxt.com/" target="_blank" rel="noopener noreferrer" id="NZXT">NZXT</a>. Product names, visual elements, and design styles may reference or adapt concepts from NZXT for academic purposes only.
-            </p>
+        <div class="about">
+            <h4 class="f-header">About AERIX</h4>
+            <p class="f-subdesc"><a href="#">Creators</a></p>
         </div>
-    </footer>
+        <div class="store">
+            <h4 class="f-header">AERIX STORE (WIP)</h4>
+            <p class="f-subdesc"><a href="#">AERIX Custom Gaming PC</a></p>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="logo">
+            <h1 class="AERIX"><a href="index.html">AERIX</a></h1>
+        </div>
+        <p class="f-subdesc">© AERIX Inc. 2025 All Rights Reserved</p>
+        <p class="references f-subdesc">
+            Inspired by <a href="https://nzxt.com/" target="_blank" rel="noopener noreferrer" id="NZXT">NZXT</a>. Product names, visual elements, and design styles may reference or adapt concepts from NZXT for academic purposes only.
+        </p>
+    </div>
+</footer>
 
     <!--JS-->
     <script src="scripts.js"></script>
