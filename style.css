@@ -1,5 +1,3 @@
-/*ADD HAMBURGER ICON TO APPEAR IN A CERTAIN SIZE TO PREVENT OVERFLOW OF NAVBAR*/
-
 html {
     scrollbar-width: none;
 	-ms-overflow-style: none;
@@ -12,6 +10,7 @@ html {
     --cards: hsl(254, 50%, 20%);
     --accents: hsl(254, 50%, 50%);
     --text: hsl(254, 50%, 90%);
+    --logo: hsl(212, 74%, 57%);
 
     --transition: 0.3s ease-in-out;
 
@@ -63,19 +62,17 @@ header h1 a {
 }
 
 /*Navigation Bar*/
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     position: sticky;
     top: 0;
     z-index: 1000;
-    
     padding: 10px 2rem;
     height: 6vh;
-	border-bottom: 1px solid hsl(254, 30%, 50%);
-
+    border-bottom: 1px solid hsl(254, 30%, 50%);
     background-color: var(--cards);
 }
 
@@ -84,25 +81,87 @@ strong {
     font-weight: 500;
     letter-spacing: 2px;
     font-style: normal;
-    color: #418ce3;
+    color: var(--logo);
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    padding: 0;
+}
+
+.hamburger ion-icon {
+    vertical-align: middle;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 .nav-shop {
-    flex-grow: 1;
     display: flex;
+    flex-grow: 0;
     justify-content: center;
     align-items: center;
-
     gap: 1.5rem;
 }
 
-.info { margin-right: 40px;}
+.info {
+    position: absolute;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
 .info .dropbtn {
     padding: 0;
     background: none;
     border: none;
     font-size: inherit;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--cards);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: hsl(254, 30%, 50%);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* Dropdown Button */
@@ -432,11 +491,9 @@ h3 {
 }
 
 /*FOOTER*/
-
 footer {
-    height: 50vh;
+    min-height: 50vh;
     width: 100%;
-
     background: linear-gradient(
         135deg,
         var(--bg),
@@ -444,28 +501,37 @@ footer {
         var(--accents)
     );
     color: var(--bg);
-
     display: flex;
     flex-direction: column;
-
-    padding: 40px 120px 40px 120px;
+    padding: 3rem 7.5rem;
     border-top: 1px solid hsl(254, 30%, 50%);
+    box-sizing: border-box; /*no padding overflow*/
 }
 
 .main-footer {
     display: flex;
     flex-direction: row;
-    gap: 100px;
-    margin-bottom: 15vh;
+    gap: 6rem;
+    margin-bottom: 5rem;
 }
 
 .f-header {
     color: white;
+    font-size: var(--margin-l);
+    margin-bottom: 1rem;
 }
 
-.f-subdesc{
+.f-subdesc {
     color: gray;
     font-weight: 400;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.f-subdesc a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .f-subdesc:hover {
@@ -473,14 +539,34 @@ footer {
 }
 
 .copyright {
-    justify-content: bottom;
-    align-items: bottom;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: auto;
+}
+
+.copyright .logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.copyright .logo a {
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: var(--margin-xl);
+    color: var(--logo);
+    text-decoration: none;
 }
 
 #NZXT {
     color: #51007a;
-    text-decoration: #51007a;
     font-weight: 600;
+    text-decoration: none;
+}
+
+#NZXT:hover {
+    text-decoration: underline;
 }
 
 /* MAX */
@@ -511,8 +597,6 @@ footer {
         text-align: center;
     }
 
-    /* PREBUILT GRID CHANGES */
-
     #header {
         font-size: 5rem;
         margin: 0 2rem;
@@ -532,30 +616,79 @@ footer {
     }
 }
 
-/* Mobile Phones */
-@media (max-width: 768px) {
-    .prebuilt-section,
-    .limited-section {
-        grid-template-columns: 1fr;
-        margin: 1rem;
+/* Tablet & Mobile (Hamburger Menu) */
+@media (max-width: 1000px) {
+    nav {
+        padding: 10px 1rem;
+        height: auto;
     }
 
-    nav {
-        align-items: flex-start;
-        height: auto;
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--cards);
+        flex-direction: column;
+        padding: 1rem;
+        border-bottom: 1px solid hsl(254, 30%, 50%);
+    }
+
+    .nav-menu.active {
+        display: flex;
     }
 
     .nav-shop {
         flex-direction: column;
+        gap: 1rem;
         width: 100%;
+        justify-content: flex-start;
     }
 
     .info {
-        margin: 0.5rem 1rem;
-        display: flex;
+        position: static;
+        flex-direction: column;
         gap: 1rem;
-        align-items: center;
+        width: 100%;
+    }
+
+    .dropbtn {
+        font-size: 1.1rem;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background-color: hsl(254, 30%, 20%);
+        border-radius: 5px;
+    }
+
+    .dropdown-content a {
+        padding: 10px 20px;
+    }
+
+    header h1 a {
         font-size: 1.5rem;
+    }
+
+    .info ion-icon {
+        font-size: 1.8rem;
+    }
+
+    .prebuilt-section,
+    .limited-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1rem;
+        gap: 1rem;
     }
 
     .slider-wrapper {
@@ -563,49 +696,87 @@ footer {
         padding: 1rem 0;
     }
 
-    .slider { height: 50vw; }
-
-    .dropbtn {
-        padding: 10px;
-        font-size: 14px;
+    .slider {
+        height: 50vw;
     }
 
-    .dropdown-content {
-        position: static;
-        width: 100%;
-        box-shadow: none;
-        border-radius: 0;
-    }
-
-    .dropdown:hover .dropdown-content { display: block; }
-
-    .slider-btn { font-size: 2rem; }
-
-    header h1 a { font-size: 1.5rem; }
-
-    .header {
-        font-size: 4rem;
+    .slider-btn {
+        font-size: 2rem;
     }
 
     .hero-section h2 {
         font-size: 2rem;
         text-align: center;
     }
+
+    .header {
+        font-size: 4rem;
+    }
 }
 
-/* Small Phones */
+/* Mobile Phones */
 @media (max-width: 600px) {
+    nav {
+        padding: 8px 0.75rem;
+    }
 
-    .prebuilt-section { grid-template-columns: 1fr; }
+    .hamburger {
+        font-size: 1.6rem;
+    }
+
+    .nav-shop {
+        gap: 0.75rem;
+    }
+
+    .info {
+        gap: 0.75rem;
+    }
+
+    .dropbtn {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .dropdown-content a {
+        padding: 8px 16px;
+    }
+
+    header h1 a {
+        font-size: 1.3rem;
+    }
+
+    .info ion-icon {
+        font-size: 1.6rem;
+    }
+
+    .prebuilt-section {
+        grid-template-columns: 1fr;
+    }
 
     #header {
         font-size: 3rem;
         margin: 0 1rem;
     }
 
-    .css-card { padding: 1rem; }
+    .css-card {
+        padding: 1rem;
+    }
 
-    .pc-subhead, .pc-desc {
+    .slider-wrapper {
+        margin-bottom: -15.5px;
+    }
+
+    #typewriter-txt {
+        font-size: var(--margin-xl);
+        text-align: left;
+    }
+
+    .slider-nav {
+        margin-bottom: 15px;
+    }
+
+    .pc-subhead,
+    .pc-desc {
         font-size: 0.9rem;
     }
 
@@ -617,7 +788,55 @@ footer {
 
 /* Extra Small Screens */
 @media (max-width: 480px) {
-    .slider { height: 60vw;}
+    nav {
+        padding: 6px 0.5rem;
+    }
+
+    .hamburger {
+        font-size: 1.4rem;
+    }
+
+    .nav-shop {
+        gap: 0.5rem;
+    }
+
+    .info {
+        gap: 0.5rem;
+    }
+
+    .dropbtn {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    header h1 a {
+        font-size: 1.2rem;
+    }
+
+    .info ion-icon {
+        font-size: 1.4rem;
+    }
+
+    .slider {
+        height: 45vw;
+    }
+
+    .prebuilt-section,
+    .limited-section {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        margin: 0.5rem;
+    }
+
+    .pc-card {
+        max-width: 100%;
+    }
+
+    .pc-head {
+        font-size: 1rem;
+        line-height: 1.2;
+        overflow-wrap: break-word;
+    }
 
     .slider-nav {
         bottom: 0.5rem;
@@ -629,23 +848,35 @@ footer {
         height: 0.4rem;
     }
 
-    .info ion-icon { font-size: 1.8rem; }
-
     .header {
-        font-size: 2.5rem;
+        font-size: 5rem;
+        text-align: left;
+        margin-bottom: -35px;
+    }
+
+    #AEEdition-txt, #limited-txt  {
+        font-size: 3.5rem;
+        margin-bottom: -25px;
     }
 
     .btn {
         font-size: 0.9rem;
         padding: 0.75rem 1rem;
+        width: auto;
+        min-width: 120px;
+        display: inline-block;
     }
 
-    .pc-subhead, .pc-desc li { font-size: 0.85rem; }
+    .pc-card {
+        max-width: min(90vw, 400px);
+    }
 
-    .slider { height: 45vw; }
+    .pc-subhead,
+    .pc-desc li {
+        font-size: 0.85rem;
+    }
 
-    .info {
-        flex-direction: column;
-        gap: 0.5rem;
+    .slider {
+        height: 45vw;
     }
 }
