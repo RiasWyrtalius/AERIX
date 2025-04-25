@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Components</title>
+
+    <!--FavIcon-->
+    <link rel="icon" type="image/x-icon" href="A.png">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/html/AERIX/AERIX-Home/style.css">
+    <link rel="stylesheet" href="componentstyles.css">
+
+    <!--FONTS-->
+
+    <!--TEXT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+    <!--AERIX FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <nav>
+        <header>
+            <strong><h1><a href="home.html">AERIX</a></h1></strong>
+        </header>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"> <!-- Hamburger Icon (hidden on desktop) -->
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <div class="nav-menu">
+            <div class="nav-shop">
+                <div class="dropdown">
+                    <button class="dropbtn">Gaming PCs</button>
+                    <div class="dropdown-content">
+                        <a href="#prebuilts-txt">Prebuilts</a>
+                        <a href="#AEEdition-txt">AERIX Edition</a>
+                        <a href="#limited-txt">Limited Deals</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Components</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Peripherals</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="/html/AERIX/AERIX-Promos/Promos.html">Promos</a></button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">About Us</button>
+                </div>
+            </div>
+            <div class="info">
+                <ion-icon name="search-circle-outline"></ion-icon>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/html/AERIX/AERIX-Log-In/login.html">Profile</a>
+                        <a href="#">Settings (WIP)</a>
+                    </div>
+                </div>
+                <ion-icon name="cart-outline"></ion-icon>
+            </div>
+        </div>
+    </nav>
+
+    <!--CPU SECTION-->
+    <section class="product-section">
+        <h3 class="header" id="prebuilts-txt">CPUs</h3>
+        <div class="product-section-section">
+
+    <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/9800X3D.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Ryzen 7 9800X3D</h3>
+                    <p class="item-subhead">8-Core 4.7Ghz Base AM5 Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>Zen 5 Architecture</li>
+                            <li>Boosts up to 5.2 GHz</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$469.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+    <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/9900X3D.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Ryzen 9 9900X3D</h3>
+                    <p class="item-subhead">12-Core 4.4GHz Base AM5 Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>Zen 5 Architecture</li>
+                            <li>Boosts up to 5.5GHz</li>
+                            <li>128 MB L3 Cache</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$680.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+    <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/CoreUltra9.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Intel® Core™ Ultra 9 285K</h3>
+                    <p class="item-subhead">24-Core 4.6GHz Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>Boosts up to 5.7Ghz</li>
+                            <li>36 MB Intel® Smart Cache</li>
+                            <li>Up to 36 TOPS (Trillion Operations Per Second)</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$589.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+    <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/CoreUltra7.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Intel Core Ultra 7-265K</h3>
+                    <p class="item-subhead">20-Core 4.6GHz Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>Boosts up to 5.5GHz</li>
+                            <li>PCIE 5.0 Support</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$339.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <div class="product-section-section">
+            <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/7700X.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Ryzen 7 7700X</h3>
+                    <p class="item-subhead">8-Core 4.5GHz Base AM5 Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>Zen 4 Architecture</li>
+                            <li>Boosts up to 5.4 GHz</li>
+                            <li>65W TDP</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$349.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/13700K.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Intel® Core™ i7-13700K</h3>
+                    <p class="item-subhead">16-Core 3.4GHz Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>Boosts up to 5.4 GHz</li>
+                            <li>30 MB Intel® Smart Cache</li>
+                            <li>Unlocked for Overclocking</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$419.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/5800X3D.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Ryzen 7 5800X3D</h3>
+                    <p class="item-subhead">8-Core 3.4GHz Base AM4 Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>3D V-Cache Technology</li>
+                            <li>Boosts up to 4.5 GHz</li>
+                            <li>105W TDP</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$329.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/12900KS.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Intel® Core™ i9-12900KS</h3>
+                    <p class="item-subhead">16-Core 3.4GHz Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>Boosts up to 5.5 GHz</li>
+                            <li>30 MB Intel® Smart Cache</li>
+                            <li>Unlocked for Overclocking</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$599.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <div class="product-section-section">
+            <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/7600X.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Ryzen 5 7600X</h3>
+                    <p class="item-subhead">6-Core 4.7GHz Base AM5 Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>Zen 4 Architecture</li>
+                            <li>Boosts up to 5.3 GHz</li>
+                            <li>65W TDP</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$249.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/13900K.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Intel® Core™ i9-13900K</h3>
+                    <p class="item-subhead">24-Core 3.0GHz Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>Boosts up to 5.8 GHz</li>
+                            <li>36 MB Intel® Smart Cache</li>
+                            <li>Unlocked for Overclocking</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$589.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/5950X.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Ryzen 9 5950X</h3>
+                    <p class="item-subhead">16-Core 3.4GHz Base AM4 Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>Zen 3 Architecture</li>
+                            <li>Boosts up to 4.9 GHz</li>
+                            <li>105W TDP</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$799.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/12600K.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Intel® Core™ i5-12600K</h3>
+                    <p class="item-subhead">10-Core 3.7GHz Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>Boosts up to 4.9 GHz</li>
+                            <li>20 MB Intel® Smart Cache</li>
+                            <li>Unlocked for Overclocking</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$319.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="product-section">
+        <div class="product-section-section">
+            <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/7950X3D.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Ryzen 9 7950X3D</h3>
+                    <p class="item-subhead">16-Core 4.2GHz Base AM5 Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>3D V-Cache Technology</li>
+                            <li>Boosts up to 5.7 GHz</li>
+                            <li>120W TDP</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$699.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/14700K.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Intel® Core™ i7-14700K</h3>
+                    <p class="item-subhead">20-Core 3.4GHz Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>Boosts up to 5.6 GHz</li>
+                            <li>33 MB Intel® Smart Cache</li>
+                            <li>Unlocked for Overclocking</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$469.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/5800X.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Ryzen 7 5800X</h3>
+                    <p class="item-subhead">8-Core 3.8GHz Base AM4 Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>Zen 3 Architecture</li>
+                            <li>Boosts up to 4.7 GHz</li>
+                            <li>105W TDP</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$299.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="cpu-images/13900KS.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Intel® Core™ i9-13900KS</h3>
+                    <p class="item-subhead">24-Core 3.2GHz Processor</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>Boosts up to 6.0 GHz</li>
+                            <li>36 MB Intel® Smart Cache</li>
+                            <li>Unlocked for Overclocking</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$729.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--GPU SECTION-->
+    <section class="product-section">
+        <h3 class="header" id="gpus-txt">GPUs</h3>
+        <div class="product-section-section">
+            <!--CARD-->
+            <div class="item-card">
+                <img src="gpu-images/RTX4090.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">ASUS ROG Strix NVIDIA GeForce RTX 4090</h3>
+                    <p class="item-subhead">24GB GDDR6X Graphics Card</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>DLSS 3.0 Support</li>
+                            <li>Boost Clock: 2.85 GHz</li>
+                            <li>PCIe 4.0 Interface</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$1,799.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="gpu-images/RTX4080.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">MSI Gaming X Trio NVIDIA GeForce RTX 4080</h3>
+                    <p class="item-subhead">16GB GDDR6X Graphics Card</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>DLSS 3.0 Support</li>
+                            <li>Boost Clock: 2.51 GHz</li>
+                            <li>PCIe 4.0 Interface</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$1,199.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="gpu-images/RX7900XTX.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Sapphire Nitro+ AMD Radeon RX 7900 XTX</h3>
+                    <p class="item-subhead">24GB GDDR6 Graphics Card</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>RDNA 3 Architecture</li>
+                            <li>Boost Clock: 2.5 GHz</li>
+                            <li>PCIe 4.0 Interface</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$999.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="gpu-images/RX7900XT.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">PowerColor Red Devil AMD Radeon RX 7900 XT</h3>
+                    <p class="item-subhead">20GB GDDR6 Graphics Card</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>RDNA 3 Architecture</li>
+                            <li>Boost Clock: 2.4 GHz</li>
+                            <li>PCIe 4.0 Interface</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$899.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <div class="product-section-section">
+            <!--CARD-->
+            <div class="item-card">
+                <img src="gpu-images/RTX4070Ti.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Gigabyte AORUS NVIDIA GeForce RTX 4070 Ti</h3>
+                    <p class="item-subhead">12GB GDDR6X Graphics Card</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>DLSS 3.0 Support</li>
+                            <li>Boost Clock: 2.61 GHz</li>
+                            <li>PCIe 4.0 Interface</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$799.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="gpu-images/RX7800XT.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">ASUS TUF Gaming AMD Radeon RX 7800 XT</h3>
+                    <p class="item-subhead">16GB GDDR6 Graphics Card</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>RDNA 3 Architecture</li>
+                            <li>Boost Clock: 2.4 GHz</li>
+                            <li>PCIe 4.0 Interface</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$649.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="gpu-images/RTX4060.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">ZOTAC Gaming NVIDIA GeForce RTX 4060</h3>
+                    <p class="item-subhead">8GB GDDR6 Graphics Card</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>DLSS 3.0 Support</li>
+                            <li>Boost Clock: 2.46 GHz</li>
+                            <li>PCIe 4.0 Interface</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$299.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="gpu-images/RX7600.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">MSI Mech 2X AMD Radeon RX 7600</h3>
+                    <p class="item-subhead">8GB GDDR6 Graphics Card</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>RDNA 3 Architecture</li>
+                            <li>Boost Clock: 2.25 GHz</li>
+                            <li>PCIe 4.0 Interface</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$269.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--RAM SECTION-->
+    <section class="product-section">
+        <h3 class="header" id="ram-txt">RAM</h3>
+        <div class="product-section-section">
+            <!--CARD-->
+            <div class="item-card">
+                <img src="ram-images/CorsairVengeance.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Corsair Vengeance RGB Pro</h3>
+                    <p class="item-subhead">16GB (2 x 8GB) DDR4 3200MHz</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>RGB Lighting</li>
+                            <li>CL16 Latency</li>
+                            <li>Compatible with Intel & AMD</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$89.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="ram-images/GSkillTridentZ.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">G.Skill Trident Z Neo</h3>
+                    <p class="item-subhead">32GB (2 x 16GB) DDR4 3600MHz</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>Optimized for AMD Ryzen</li>
+                            <li>CL18 Latency</li>
+                            <li>RGB Lighting</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$179.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="ram-images/KingstonFury.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">Kingston Fury Beast</h3>
+                    <p class="item-subhead">16GB (2 x 8GB) DDR5 5200MHz</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>DDR5 Technology</li>
+                            <li>CL40 Latency</li>
+                            <li>Intel XMP 3.0 Ready</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$129.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD-->
+            <div class="item-card">
+                <img src="ram-images/TeamGroupTForce.avif" />
+                <div class="css-card">
+                    <h3 class="item-head">TeamGroup T-Force Delta</h3>
+                    <p class="item-subhead">32GB (2 x 16GB) DDR5 6000MHz</p>
+                    <p class="item-desc">
+                        Key Specs
+                        <ul>
+                            <li>ARGB Lighting</li>
+                            <li>CL38 Latency</li>
+                            <li>Compatible with Intel & AMD</li>
+                        </ul>
+                    </p>
+                    <div class="item-buy">
+                        <p class="item-price">$249.99</p>
+                        <a href="#" class="btn" target="_blank">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--FOOTER-->
+<footer>
+    <div class="main-footer">
+        <div class="contacts">
+            <h4 class="f-header">Contact (WIP)</h4>
+            <p class="f-subdesc"><a href="#">Customer Support</a></p>
+            <p class="f-subdesc"><a href="#">Submit a Request</a></p>
+            <p class="f-subdesc"><a href="#">Support Center</a></p>
+        </div>
+        <div class="about">
+            <h4 class="f-header">About AERIX</h4>
+            <p class="f-subdesc"><a href="#">Creators</a></p>
+        </div>
+        <div class="store">
+            <h4 class="f-header">AERIX STORE (WIP)</h4>
+            <p class="f-subdesc"><a href="#">AERIX Custom Gaming PC</a></p>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="logo">
+            <h1 class="AERIX"><a href="home.html">AERIX</a></h1>
+        </div>
+        <p class="f-subdesc">© AERIX Inc. 2025 All Rights Reserved</p>
+        <p class="references f-subdesc">
+            Inspired by <a href="https://nzxt.com/" target="_blank" rel="noopener noreferrer" id="NZXT">NZXT</a>. Product names, visual elements, and design styles may reference or adapt concepts from NZXT for academic purposes only.
+        </p>
+    </div>
+</footer>
+    <!--JS-->
+    <script src="scripts.js"></script>
+
+    <!--ICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
